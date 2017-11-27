@@ -76,7 +76,7 @@ class ClosedCube_HDC1080 {
 public:
 	ClosedCube_HDC1080();
 
-	void begin(uint8_t address);
+	void begin(uint8_t address,uint8_t address1,uint8_t address2);
 	uint16_t readManufacturerId(); // 0x5449 ID of Texas Instruments
 	uint16_t readDeviceId(); // 0x1050 ID of the device
 

@@ -37,9 +37,9 @@ ClosedCube_HDC1080::ClosedCube_HDC1080()
 {
 }
 
-void ClosedCube_HDC1080::begin(uint8_t address) {
+void ClosedCube_HDC1080::begin(uint8_t address,uint8_t address1,uint8_t address2) {
 	_address = address;
-	Wire.begin();
+	Wire.begin(address1,address2);
 
 	setResolution(HDC1080_RESOLUTION_14BIT, HDC1080_RESOLUTION_14BIT);
 }
